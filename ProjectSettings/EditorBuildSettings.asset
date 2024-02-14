@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GuitarHero.unity
+    guid: 3083feb85ebbfcb49ae6a20bc72ded93
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 11f2a2909c225e745886d4810dce428a
