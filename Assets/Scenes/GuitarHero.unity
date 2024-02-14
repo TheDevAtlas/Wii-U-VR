@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c16d600349df24693fdc845df28774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  channel: 0
+  channel: 1
   startShootPoint: {fileID: 273721992}
   line: {fileID: 273721993}
 --- !u!1 &929853868
@@ -1786,8 +1786,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e92351801e69384a9bd076eda548f04, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.587
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2060,6 +2060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraPivot: {fileID: 2145848164}
   speed: 3
+  currentRotation: {x: 0, y: 0, z: 0}
 --- !u!23 &1402889338
 MeshRenderer:
   m_ObjectHideFlags: 0

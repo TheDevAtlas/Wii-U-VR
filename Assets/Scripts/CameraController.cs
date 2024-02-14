@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour {
 	GamePad gamePad;
 
 	public float speed = 1f;
+	public Vector3 currentRotation;
 
 	void Start()
 	{
@@ -23,7 +24,7 @@ public class CameraController : MonoBehaviour {
 
 		if (gamePadState.gamePadErr == GamePadError.None) 
 		{
-
+			
 			// Get Gyro Data, Convert To Degrees //
 			Vector3 gyroData = gamePadState.gyro;
 			//Vector3 gyroTwo = gamePadState.
@@ -41,19 +42,19 @@ public class CameraController : MonoBehaviour {
 			{ 
 				//speed /= 10f;
 			}
+
 			/*
-
 			// Read data from the gyroscope
-			Vector3 gyroData = gamePadState.gyro;
-			Vector3 scaledData = new Vector3 (-gyroData.x, -gyroData.z, gyroData.y);
+			//Vector3 gyroData = gamePadState.gyro;
+			//Vector3 scaledData = new Vector3 (-gyroData.x, -gyroData.z, gyroData.y);
 
-			Vector3 acelData = gamePadState.acc;
+			//Vector3 acelData = gamePadState.acc;
 			Vector3 gravData = gamePadState.magnetometer;
 
 			// Read data from the left stick
 			// Vector2 leftStick = gamePadState.lStick; 
 
-			cameraPivot.Rotate(scaledData * speed);
+			//cameraPivot.Rotate(scaledData * speed);
 
 
 			// Read data from the gyroscope
@@ -72,6 +73,7 @@ public class CameraController : MonoBehaviour {
 			cameraPivot.rotation = Quaternion.Euler(currentRotation.x, currentRotation.y, currentRotation.z);
 
 			/// MOVE ///
+			/*
 			Vector3 acelData = gamePadState.acc;
 			if (acelData.z < 0) {
 				transform.Translate (acelData.z * Vector3.forward * moveSpeed * Time.deltaTime);
@@ -79,7 +81,8 @@ public class CameraController : MonoBehaviour {
 			if (acelData.z > 0) {
 				transform.Translate (acelData.z * Vector3.back * moveSpeed * Time.deltaTime);
 			}
-
+			*/
+			/*
 			// Reading magnetometer data
 			Vector3 magnData = gamePadState.magnetometer;
 			// Assume magnData provides a directional vector towards magnetic north
